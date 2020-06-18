@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = "NzIyNzI5MzQzNTc4NjY5MTI3.Xur9Mg.DjB3Z2P4SP9LPNmmX6dVDtyl_bY"
+
 const ytdl = require("ytdl-core");
 const streamOptions = { seek: 0, volume:1};
 
 
 
-client.login(token);
+
 
 client.on('ready', () => {
     console.log("Bot is ready");
@@ -34,3 +34,4 @@ client.on('message', message => {
     }
 
 });
+client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot 
