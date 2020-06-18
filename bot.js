@@ -25,7 +25,8 @@ client.on('message', message => {
                     const stream = ytdl('https://www.youtube.com/watch?v=zzb5hdRLbu4' , { filter : 'audioonly'});
                     const dispatcher = connection.play(stream, streamOptions);
                     dispatcher.on("end", end => {
-                        VoiceChannel.leave();
+                        console.log("left channel");
+                        voiceChannel.leave();
                     })
 
                 })
