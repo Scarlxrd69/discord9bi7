@@ -1,13 +1,24 @@
 {
-    "name": "Discord Troll",
-    "description": "Test",
-    "version": "0.0.0",
-    "main": "bot.js",
-    "scripts": {
-      "start": "node bot.js"
-    },
-    "dependencies": {
-      "discord.js": "11.1.0",
-      "request": "2.81.0"
-    }
-  }
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "ytdl-core": "^2.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Scarlxrd69/discord9bi7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
