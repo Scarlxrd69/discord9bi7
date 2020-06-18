@@ -24,7 +24,7 @@ client.on('message', message => {
                     console.log("Bot joined the channel");
                     const stream = ytdl('https://www.youtube.com/watch?v=zzb5hdRLbu4' , { filter : 'audioonly'});
                     const dispatcher = connection.play(stream, streamOptions);
-                    dispatcher.on('end', () => {
+                    dispatcher.on("end", end => {
                         VoiceChannel.leave();
                     })
 
