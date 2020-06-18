@@ -24,14 +24,18 @@ client.on('message', message => {
                     console.log("Bot joined the channel");
                     const stream = ytdl('https://www.youtube.com/watch?v=zzb5hdRLbu4' , { filter : 'audioonly'});
                     const dispatcher = connection.play(stream, streamOptions);
-                    dispatcher.on("end", end => {
-                        console.log("left channel");
-                        voiceChannel.leave();
-                    })
+
 
                 })
+                
                 .catch();
         }
+    }
+    if (message.content.toLowerCase().startsWith("!leave")) {
+        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '722973391765897261');
+        VoiceChannel.leave();
+        console.log("Bot left the Channel");
+
     }
 
 });
