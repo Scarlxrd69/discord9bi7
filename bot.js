@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = "NzIyNzI5MzQzNTc4NjY5MTI3.Xurmzg.uwe6K0xeHvLOewfkfK0lmNT8PbU"
+const token = "NzIyNzI5MzQzNTc4NjY5MTI3.Xur9Mg.DjB3Z2P4SP9LPNmmX6dVDtyl_bY"
 const ytdl = require("ytdl-core");
 const streamOptions = { seek: 0, volume:1};
 
