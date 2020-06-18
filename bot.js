@@ -16,7 +16,7 @@ client.on('message', message => {
     if (message.author.bot)
         return;
     if (message.content.toLowerCase().startsWith("!play")) {
-        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '722973391765897261');
+        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '702979733368995960');
         if (VoiceChannel != null) {
             console.log(VoiceChannel.name + "was found and is a" + VoiceChannel + "channel.");
             VoiceChannel.join()
@@ -32,7 +32,7 @@ client.on('message', message => {
         }
     }
     if (message.content.toLowerCase().startsWith("!leave")) {
-        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '722973391765897261');
+        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '702979733368995960');
         VoiceChannel.leave();
         console.log("Bot left the Channel");
 
