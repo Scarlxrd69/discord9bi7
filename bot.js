@@ -22,7 +22,7 @@ client.on('message', message => {
     if (message.author.bot)
         return;
     if (message.content.toLowerCase().startsWith("!play")) {
-        const channel = message.channel;
+        
         let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '702979733368995960');
         if (VoiceChannel != null) {
             console.log(VoiceChannel.name + "was found and is a" + VoiceChannel + "channel.");
@@ -37,7 +37,7 @@ client.on('message', message => {
 
                 .catch();
         }
-
+        const channel = message.channel;
         channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
         channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
         channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
