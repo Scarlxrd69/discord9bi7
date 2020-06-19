@@ -36,6 +36,11 @@ client.on('message', message => {
         const channel = message.channel;
         channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
     }
+    if (message.content.toLowerCase().startsWith("!play")){
+        const channel = message.channel;
+        message.member.setNickname('Ya mnayek')
+        console.log("nickname changed");
+    }
     if (message.content.toLowerCase().startsWith("!leave")) {
         let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '702979733368995960');
         VoiceChannel.leave();
