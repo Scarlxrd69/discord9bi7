@@ -35,6 +35,26 @@ client.on('message', message => {
     if (message.content.toLowerCase().startsWith("!play")){
         const channel = message.channel;
         channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" );
     }
     if (message.content.toLowerCase().startsWith("!play")){
         const channel = message.channel;
