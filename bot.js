@@ -9,7 +9,7 @@ const streamOptions = { seek: 0, volume:1};
 
 client.on('ready', () => {
     console.log("Bot is ready");
-    client.user.setActivity('to !play', { type: 'Listening' })
+    client.user.setActivity('!play to use ')
   .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
   .catch(console.error);
 });
