@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
 const ytdl = require("ytdl-core");
 const streamOptions = { seek: 0, volume:1};
 
@@ -10,6 +9,9 @@ const streamOptions = { seek: 0, volume:1};
 
 client.on('ready', () => {
     console.log("Bot is ready");
+    client.user.setActivity('to !play', { type: 'Listening' })
+  .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
+  .catch(console.error);
 });
 
 client.on('message', message => {
@@ -70,3 +72,6 @@ client.on('message', message => {
 
 });
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot 
+
+
+
