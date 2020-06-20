@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const ytdl = require("ytdl-core");
 const streamOptions = { seek: 0, volume: 1 };
+const { Client, MessageAttachment } = require('discord.js');
+
 
 
 
@@ -38,27 +40,19 @@ client.on('message', message => {
                 .catch();
         }
         const channel = message.channel;
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK");
+        const attachment = new MessageAttachment('https://media.tenor.com/images/e67977be0e7bf84cd9fa3567515fd9a2/tenor.gif');
+       
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
+        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
+        
+
+        
+        
+        
 
         message.member.setNickname('Ya mnayek')
         console.log("nickname changed");
