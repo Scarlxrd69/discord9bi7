@@ -40,14 +40,14 @@ client.on('message', message => {
                 .catch();
         }
         const channel = message.channel;
-        const attachment = new MessageAttachment('https://media.tenor.com/images/e67977be0e7bf84cd9fa3567515fd9a2/tenor.gif');
+        const attachment = new MessageAttachment('https://media.giphy.com/media/94oj4dwuJfDKE/giphy.gif');
        
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
-        channel.send("<@" + message.author.id + ">" + " EHEHEHEH YA MNAYEK" , attachment);
+        channel.send("<@" + message.author.id + ">" + " Para mibouni <3" , attachment);
+        channel.send("<@" + message.author.id + ">" + " Para mibouni <3" , attachment);
+        channel.send("<@" + message.author.id + ">" + " Para mibouni <3" , attachment);
+        channel.send("<@" + message.author.id + ">" + " Para mibouni <3" , attachment);
+        channel.send("<@" + message.author.id + ">" + " Para mibouni <3" , attachment);
+        channel.send("<@" + message.author.id + ">" + " Para mibouni <3" , attachment);
         
 
         
