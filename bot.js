@@ -21,11 +21,16 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
+
+    const channel = message.channel;
+    if (message. attachments. size > 0) {
+        channel.send("<@" + message.author.id + ">" + " mamestek w mamset el memes mte3ek get a life please " );
+      }
     if (message.author.bot)
         return;
     if (message.content.toLowerCase().startsWith("!play")) {
         
-        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '702979733368995960');
+        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '692171325816438824');
         if (VoiceChannel != null) {
             console.log(VoiceChannel.name + "was found and is a" + VoiceChannel + "channel.");
             VoiceChannel.join()
@@ -59,7 +64,7 @@ client.on('message', message => {
     }
 
     if (message.content.toLowerCase().startsWith("!leave")) {
-        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '702979733368995960');
+        let VoiceChannel = message.guild.channels.cache.find(channel => channel.id === '692171325816438824');
         VoiceChannel.leave();
         console.log("Bot left the Channel");
         
@@ -81,4 +86,4 @@ client.on('message', message => {
 
 });
 
-client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot 
+client.login(process.env.BOT_TOKEN);//where process.env.BOT_TOKEN is the token of our bot  
