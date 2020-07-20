@@ -22,10 +22,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    const channel = message.channel;
-    if (message. attachments. size > 0) {
-        channel.send("<@" + message.author.id + ">" + " mamestek w mamset el memes mte3ek get a life please " );
-      }
+   
     if (message.author.bot)
         return;
     if (message.content.toLowerCase().startsWith("!play")) {
